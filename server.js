@@ -52,6 +52,12 @@ res.render('about.hbs', {
 });
 });
 
+app.get('/projects', (req, res) => {
+res.render('projects.hbs', {
+  pageTitle: 'Projects Page',
+});
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorCode: '405',
